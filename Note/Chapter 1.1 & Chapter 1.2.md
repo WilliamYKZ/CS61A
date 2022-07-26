@@ -92,7 +92,7 @@ max(7.5, 9.5)
 
 1. This call expression has subexpressions: the operator is an expression that precedes parentheses, which enclose a comma-delimited list of operand expressions.
 
-![](https://raw.githubusercontent.com/WilliamYKZ/Picture/main/Picture/Screen%20Shot%202022-07-25%20at%208.05.35%20PM.png?token=GHSAT0AAAAAABW67RCIU524YQUWDFUZN3L6YW7HY4A)
+![](https://raw.githubusercontent.com/WilliamYKZ/Picture/main/Picture/Screen%20Shot%202022-07-25%20at%208.05.35%20PM.png?token=GHSAT0AAAAAABW67RCI6BTVGL2F3C3AWXRKYW7SXRA)
 
 ​			The operator specifies a function. when this call expression is evaluated, we say that the function `max` is called with arguments 7.5 and 9.5, and returns a value of 9.5.
 
