@@ -92,7 +92,7 @@ max(7.5, 9.5)
 
 1. This call expression has subexpressions: the operator is an expression that precedes parentheses, which enclose a comma-delimited list of operand expressions.
 
-![](https://raw.githubusercontent.com/WilliamYKZ/Picture/main/Picture/Screen%20Shot%202022-07-25%20at%208.05.35%20PM.png?token=GHSAT0AAAAAABW67RCI6BTVGL2F3C3AWXRKYW7SXRA)
+![](https://github.com/WilliamYKZ/Picture/raw/main/Picture/Screen%20Shot%202022-07-25%20at%208.05.35%20PM.png)
 
 ​			The operator specifies a function. when this call expression is evaluated, we say that the function `max` is called with arguments 7.5 and 9.5, and returns a value of 9.5.
 
@@ -147,4 +147,33 @@ from math import pi
 ```
 
 2. The `=` symbol is called the assignment operator in Python. The possibility of binding names to values and later retrieving those values by name means that the interpreter must maintain some sort of memory that keeps track of the names, values, and bindings. This memory is called an environment. 
+3. Name can also be bound to functions. 
+
+```python
+>>> max
+<built-in function max>
+
+# We can use assignment statement to give new names to existing function
+>>> f = max
+>>> f
+<built-in function max>
+```
+
+
+
+## The None-Pure Print Function
+
+1. Pure function. Functions have some input (their argument) and return some output (the result of applying them).
+2. Non-Pure Function. In addition to returning a value, applying a non-pure function can generate side effects, which make some change to the state of the interpreter or computer. A common side effect is to generate additional output beyong the return value, using the `print` function.
+
+```python
+>>> print(print(1), print(2))
+1
+2
+None None
+```
+
+Be careful with `print` the fact that it return `None` means that it should not be the expression in an assignment statement. 
+
+
 
